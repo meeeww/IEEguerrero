@@ -21,6 +21,13 @@ h2 {
   font-size: 1.2em;
 }
 
+a {
+  color: #176ec4;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 form {
   background-color: #fff;
   color: #176ec4;
@@ -78,13 +85,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-.header_links a {
-  color: #176ec4;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
 }
 
 .header_logoIEE {
@@ -289,6 +289,16 @@ button:hover {
   align-items: center;
   background-color: #2c3e50;
   gap: 10rem;
+  padding-block: 5rem;
+}
+
+.contenedor_error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  gap: 2rem;
   padding-block: 5rem;
 }
 
