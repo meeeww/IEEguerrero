@@ -55,10 +55,22 @@ textarea {
   resize: none;
 }
 
+a.button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 11rem;
+  height: 3.5rem;
+  transition: background-color 0.3s;
+}
+
 button {
   background-color: #007bff;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
