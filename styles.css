@@ -4,10 +4,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #fefefe;
@@ -60,8 +60,10 @@ button {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  width: 11rem;
+  height: 3.5rem;
   transition: background-color 0.3s;
 }
 
@@ -149,6 +151,18 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
+}
+
+.seccion_principal_titulo span {
+  color: #0682ff;
+  font-weight: 800;
+}
+
+.seccion_principal_titulo_boton {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 3rem;
 }
 
 @media (min-width: 768px) {
