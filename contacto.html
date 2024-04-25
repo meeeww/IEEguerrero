@@ -22,7 +22,7 @@
     </header>
     <div class="contenedor_contacto">
       <h2>Contacto</h2>
-      <form action="/submit" method="post">
+      <form id="contactForm">
         <div>
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
@@ -32,8 +32,8 @@
           <input type="tel" id="phone" name="phone" required />
         </div>
         <div>
-          <label for="other">Mensaje</label>
-          <textarea id="other" name="other" required></textarea>
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" required></textarea>
         </div>
         <div>
           <button type="submit">Enviar</button>
@@ -62,5 +62,24 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var formData = new FormData(this);
+
+        fetch("https://api.comproinmuebles.es/iee/mail", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            alert("Mensaje enviado con éxito!");
+          })
+          .catch((error) => {
+            alert("Error al enviar el mensaje");
+          });
+      });
+    </script>
   </body>
 </html>
