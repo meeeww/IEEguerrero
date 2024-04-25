@@ -295,7 +295,7 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-.footer div {
+.footer_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -306,6 +306,21 @@ button:hover {
 
 .footer p {
   text-align: center;
+}
+
+.footer_contact_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 2rem;
+  color: black;
+}
+
+.footer_contact_list_individual{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .contenedor_contacto {
