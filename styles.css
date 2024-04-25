@@ -62,7 +62,7 @@ a.button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  width: 11rem;
+  width: 15rem;
   height: 3.5rem;
   transition: background-color 0.3s;
 }
@@ -180,6 +180,10 @@ button:hover {
 .seccion_principal_titulo_boton {
   display: flex;
   justify-content: center;
+}
+
+.seccion_principal_titulo_subtitulo p {
+  margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
